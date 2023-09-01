@@ -1,0 +1,8 @@
+package com.model;
+
+public class Grocery {
+	private int ItemCount;
+	private Shampoo shampoo;
+	private Toy toy;
+	private Biscuit biscuit;
+}

@@ -1,0 +1,16 @@
+package com.main;
+
+import com.dao.Hrdao;
+import com.dao.HrdaoImpl;
+import com.dao.MySqlConnection;
+
+public class HRApplication {
+
+	public static void main(String[] args) {
+		MySqlConnection connection=new MySqlConnection();
+		connection.getConnection();
+		Hrdao hrdao=new HrdaoImpl();
+		hrdao.readAllDepartments();
+	}
+
+}

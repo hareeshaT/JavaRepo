@@ -1,0 +1,25 @@
+package Day3;
+
+public class UserMainCode {
+	public static String getString(String str) {
+		char firstChar = str.charAt(0);
+        char secondChar = str.charAt(1);
+
+        if (firstChar == 'k' && secondChar == 'b') {
+            return str.substring(0, 2) + str.substring(3);
+        } else if (firstChar == 'k') {
+            // Keep the first char 'k'.
+            return str.substring(0, 1) + str.substring(2);
+        } else if (secondChar == 'b') {
+            // Keep the second char 'b'.
+            return str.substring(1, 2) + str.substring(3);
+        } else {
+            // Remove the first two characters.
+            return str.substring(2);
+        }
+	}
+	public static void main(String[] args) {
+		String result=getString("hello");
+		System.out.println(result);
+	}
+}

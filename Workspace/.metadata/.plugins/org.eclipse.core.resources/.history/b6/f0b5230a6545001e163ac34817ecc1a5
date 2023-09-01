@@ -1,0 +1,13 @@
+package com.dao;
+
+import com.model.Biscuit;
+import com.model.Grocery;
+import com.model.Shampoo;
+import com.model.Toy;
+
+public interface DAOGrocery {
+	public abstract Shampoo createItem(Shampoo shampoo);
+	public abstract Toy createItem(Toy toy);
+	public abstract Biscuit createItem(Biscuit buscuit);
+	
+}

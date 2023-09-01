@@ -1,0 +1,13 @@
+package Day4;
+
+public class MainCard {
+	public static void getCardDetails(int num) {
+		
+	}
+
+	public static void main(String[] args) {
+		MembershipCard memCard=new MembershipCard();
+
+	}
+
+}

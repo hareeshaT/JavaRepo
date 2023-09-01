@@ -1,0 +1,26 @@
+10th Aug 
+
+  MVC 	Model(POJO) View Controller 
+
+
+Assignment 
+	LHS = RHS 
+		ex : ?? a = 22;
+
+Compare 
+	== 
+			22 == 22 
+
+String  in java 
+
+	String is a class  (predefined class  --> API  --> java.lang.String 
+
+	default imported 
+
+		import java.lang  default API 		.String;
+
+There are 2 ways to declar a string 
+
+	1) String var =  "Hello"  		// String literal 
+
+	2) String var = new String("Hello");    //String Object 

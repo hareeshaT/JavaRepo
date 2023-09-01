@@ -1,0 +1,69 @@
+23rd Aug 2023
+
+Exception  
+     problem  --> how to solve 
+
+
+java.lang.Throwable 
+java.lang.Exception extends  java.lang.Throwable  --> event driven --> handle program
+java.lang.Error     extends  java.lang.Throwable			can not / should not handle 
+
+java.lang.Exception
+1) Checked Exception  --> developer has to check 
+2) un checked Exception --> JVM 
+
+java.lang.Exception  == handle 
+
+1) try{ 
+	// code which has possibility of exception 
+    }
+    catch(which _exception_to be caught) {
+
+	// solution 
+    }
+
+2) try{ 
+	// code which has possibility of exception 
+    }
+    catch(which _exception_to be caught || which _exception_to be caught) {
+
+	// solution 
+    }
+    
+3) try{ 
+	// code which has possibility of exception 
+    }
+    catch(which _exception_to be caught) {
+
+	// solution 
+    }
+    finally{
+        // logic would be executed where there is an exception or not 
+	}
+
+or
+3) try{ 
+	// code which has possibility of exception 
+    }
+    finally{
+        // logic would be executed where there is an exception or not 
+	}
+
+4) throw  --> raise an exception  
+
+5 throws 
+
+Why 
+	home - puncture -catch(solution)==> traffic n Office  --> application should not exit due to exception 
+
+certain .class  predefined unchecked exption
+			ArithmeticException
+			NullpointerException   
+
+Custom exception  == user defined exception 
+
+
+class <className> extends Exception 
+
+
+Tomorrow  --> collection --> interface 

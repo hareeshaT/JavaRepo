@@ -1,0 +1,119 @@
+11th Aug
+
+
+
+Constructor 
+     is a function ()
+     name of the constructor  should be name as class name 
+     No return type not even void 
+     access modifier ( default , public) 
+
+Why ???
+  to initize values inside the class 
+   
+
+multiple form  == OOP   == Polymorphism 
+				a) Static / method overload   ==constructor overload 
+				b) Dynamic /method override 
+public class Employee{
+
+	private int empNo;
+	private String empName;
+	private char gender;
+
+
+	public Employee(){	// default JVM initialise with default value 
+		empNo = 0;
+		empName = "STG"
+		gender ='\u0000'
+	}
+
+	public Employee(int a){	// default JVM initialise with default value 
+		empNo = a;
+		empName = null
+		gender ='\u0000'
+	}
+	public Employee(int empNo ,  char gender ,String empName  ){	// default JVM initialise with default value 
+		empNo = a;
+		empName = b
+		gender =c
+	}
+Employee existingObject= new Employee
+	public Employee(existingObject){	// default JVM initialise with default value 
+		empNo = existingObject.getEmpNo()
+		empName = b
+		gender =c
+	}
+
+} 
+
+	Employee employee = new Employee(22,'f',"Hello")
+
+	employee.setProperty(22);
+
+
+Types of constructor 
+	1) Default  --> JVM provide constructor 
+	2) parameter 
+	3) copy constructor 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dynamic input 
+	Command line argument 
+public static void main(String[] args) {
+		System.out.println(args[0]);
+	}
+
+cmd >  javac FileName.java 
+	FileName.class
+cmd > java FileName "???" "?????" "???????" "4"   Command line argument  
+
+
+
+
+
+
+
+BODMAS () 
+
+
+
+		1) float  var = 12.34f
+
+
+
+		2) int  var = ( int) 12.34f      	// Type casting 
+						to convet 
+
+
+			int var = Integer."22"	
+
+
+Wrapper class
+	primitive  		object 	
+	int 			Integer 		Interger obj = new Integer(22);
+	float			Foat
+	char			Character 

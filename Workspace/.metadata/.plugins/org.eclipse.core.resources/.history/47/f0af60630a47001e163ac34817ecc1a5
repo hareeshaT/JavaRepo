@@ -1,0 +1,9 @@
+package Day4;
+
+public class PaybackCard extends Card{
+	private int pointsEarned;
+	private double totalAmount;
+	
+	
+
+}

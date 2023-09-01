@@ -1,0 +1,12 @@
+package com.main;
+
+import com.dao.MySqlConnection;
+import com.mysql.cj.MysqlConnection;
+
+public class HRApplication {
+
+	public static void main(String[] args) {
+		MySqlConnection.getConnection();
+	}
+
+}

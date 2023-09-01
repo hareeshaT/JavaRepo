@@ -1,0 +1,17 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.Statement;
+import java.util.List;
+
+import com.model.Department;
+
+public class HrdaoImpl implements Hrdao{
+
+	@Override
+	public List<Department> readAllDepartments() {
+		Connection connection=MySqlConnection.getConnection();
+		Statement statement=connection.createStatement();
+	}
+
+}

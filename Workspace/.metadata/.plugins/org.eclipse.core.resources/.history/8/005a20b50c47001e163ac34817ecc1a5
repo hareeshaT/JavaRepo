@@ -1,0 +1,15 @@
+package Day4;
+
+public class MainCard {
+	public static void getCardDetails(int num) {
+		
+	}
+
+	public static void main(String[] args) {
+		MembershipCard memCard=new MembershipCard("hareesha","12E3456","2025/09/08",4);
+		PaybackCard payCard=new PaybackCard("hareesha","12E3456","2025/09/08",1000,68789);
+		
+		getCardDetails(2);
+	}
+
+}

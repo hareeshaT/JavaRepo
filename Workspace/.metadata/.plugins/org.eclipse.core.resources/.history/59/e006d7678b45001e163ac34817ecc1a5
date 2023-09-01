@@ -1,0 +1,24 @@
+package com.dao;
+
+import java.util.Set;
+
+import com.model.Biscuit;
+import com.model.Grocery;
+import com.model.Shampoo;
+import com.model.Toy;
+
+public interface DAOGrocery {
+	public abstract Set<Grocery> createCart(Shampoo shampoo,Toy toy,Biscuit biscuit);
+	public abstract Shampoo createShampoo(Shampoo shampoo);
+	public abstract Shampoo readShampoo(String color);
+	public abstract Shampoo updateShampoo(int quantity);
+	public abstract Shampoo delShampoo(Shampoo shampoo);
+	public abstract Toy createToy(Toy toy);
+	public abstract Toy readToy(Toy toy);
+	public abstract Toy updateToy(Toy toy);
+	public abstract Toy delToy(Toy toy);
+	public abstract Biscuit createBiscuit(Biscuit buscuit);
+	public abstract Biscuit readBiscuit(Biscuit buscuit);
+	public abstract Biscuit updateBiscuit(Biscuit buscuit);
+	public abstract Biscuit delBiscuit(Biscuit buscuit);
+}

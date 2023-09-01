@@ -1,0 +1,12 @@
+package Day3;
+
+public class ReverseString {
+	public static String reshape(String str,char ch) {
+		
+	}
+
+	public static void main(String[] args) {
+		System.out.println(reshape("Rabbit",'-'));
+	}
+
+}

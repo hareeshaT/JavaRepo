@@ -1,0 +1,8 @@
+collecton 
+casestudy == POC
+
+SQL 
+JDBC  --Java  + Database  --> MYSQL 
+maven
+log4j
+git 

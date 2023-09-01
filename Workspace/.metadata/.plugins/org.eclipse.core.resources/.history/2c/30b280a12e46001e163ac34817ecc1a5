@@ -1,0 +1,7 @@
+package InheritAssign.copy;
+
+public class A {
+	public void displayA() {
+        System.out.println("This is class A");
+    }
+}

@@ -1,0 +1,11 @@
+package com.dao;
+
+import java.sql.Connection;
+
+import com.exception.LoginException;
+import com.model.User;
+
+public interface Logindao {
+	public abstract String createUser(User user) throws LoginException;
+	public abstract String readUser(String username,String pwd) throws LoginException;
+}

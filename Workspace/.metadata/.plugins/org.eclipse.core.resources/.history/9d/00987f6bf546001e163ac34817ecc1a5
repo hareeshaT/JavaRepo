@@ -1,0 +1,10 @@
+package Day4;
+
+public class Circle extends Shape{
+	
+	public Circle(String name) {
+		super(name);
+	}
+
+	private int radius;
+}

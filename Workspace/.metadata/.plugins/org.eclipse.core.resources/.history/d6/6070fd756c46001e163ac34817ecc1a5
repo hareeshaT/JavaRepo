@@ -1,0 +1,18 @@
+package Day3;
+
+public class Pangram {
+	public static boolean isPangram(String str) {
+		
+		return true;
+	}
+	public static void main(String[] args) {
+		boolean op=false;
+		if(op==true) {
+			System.out.println("pangram");
+		}
+		else {
+			System.out.println("Not a pangram");
+		}
+	}
+
+}

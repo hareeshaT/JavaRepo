@@ -1,0 +1,37 @@
+21st Aug 2023
+
+Poly
+
+Polymorphism  feature of Object-Oriented Programming.
+polymorphism means having many forms
+  
+mainly divided into two types: 
+	1) Compile-time Polymorphism /static polymorphism = function overloading.   cmd > javac 
+	2) Runtime Polymorphism			cmd > java 
+
+
+
+Method Overloading
+ a) When there are multiple functions with the same name but different parameters then these functions     are said to be overloaded. 
+		class Arithmetic {
+				void add() { }  
+				void add(int a) { }  
+				int  add(int a , float b) { }  
+			}
+
+
+Runtime Polymorphism / Dynamic Method Dispatch /
+
+a) Method overriding, occurs when a derived class (extends) has a definition for one of the member functions of the base class. That base function is said to be overridden.
+
+
+
+1) Association is a relation between two separate classes
+2) Association can be 
+	a) one-to-one, 
+	b) one-to-many, 
+		many  == [ ]array 
+	c) many-to-one, 
+	d) many-to-many
+
+3) Aggregation are the two forms of association. 

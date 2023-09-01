@@ -1,0 +1,16 @@
+package com.model;
+
+public class Shampoo {
+	private int Quantity;
+	private String brand;
+	private String color;
+	private float price;
+	
+	public Shampoo(int quantity, String brand, String color, float price) {
+		super();
+		Quantity = quantity;
+		this.brand = brand;
+		this.color = color;
+		this.price = price;
+	}
+}

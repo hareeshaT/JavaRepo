@@ -1,0 +1,5 @@
+package com.model;
+
+public class Grocery {
+	private int ItemCount;
+}

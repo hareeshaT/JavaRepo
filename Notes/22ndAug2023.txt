@@ -1,0 +1,118 @@
+22nd Aug 2023
+
+
+Abstract 
+
+Case 1 
+ 1) key word == reserved word
+ 2) Abstract is defined at class level , function level  
+
+	class <ClassName>{  				abstract class <ClassName>{  
+
+
+	
+	}						}
+
+
+	<ClassName> reference = new <ClassName>()
+3) when a class is abstract we can not instantiate ( new ) 
+
+4) since we can not instantiate , so use it we need to inherite  (extends) 
+
+
+Case 2:
+
+1) in a class if we only declare a function ( no boby) , then that function should be defined as    abstract 
+	abstract  class <ClassName) {
+
+		add() {			// defined 
+		.........
+		}
+
+		abstract sub() ;			// declare  == 
+		
+		}
+
+2) in a class if we have atleast one abstract method  then the class should be also declare abstract 
+
+
+
+
+Java does not support multiple inheritance 
+	class Child extends Parent1 , Parent2 
+
+
+
+Interface 
+	a) is a keyword  == reserved word 
+	b) interface follow class coding standard , where interface name should start with capital            letter 
+		interface <InterfaceName> 
+	c) interface can have variables and functions 
+
+	d) all functions inside an interface should/must be abstract (method declaration)
+	e) ClassName  implements <interface1>,<interface2>......
+	f) the implementation class must @Override all abstract methods defined in an interface 
+	g) when we declare avarible in an interface by default 
+			public static final var = 20;	// constant 
+ 
+Why 
+	a) To achieve abstract 
+	2) contract == rule == have common behaviour 
+
+
+Final 
+  a) 'final' is a keyword or reserved word 
+  b) final  == const 
+  c) when you declare avariable 'final' you must assign a value 
+	final int age = 18;
+
+
+Why 
+	if you dont wnat to change the value
+
+
+Where all can we use final 
+	a) final varible = <value>
+	b) final can be at function 
+			final public void add() { S.O.P ("Hello"); } 
+
+	if a function is defined as final you can not overload , override 
+	c) final can be at class level 
+		final class <className{
+
+
+		}
+		You can not inherit 	can not extends 
+
+
+
+String is immutable  / can not change 
+
+	int a ;
+
+	char name[ ] 		// string 
+final 
+
+
+	final PI =3.1415
+
+
+abstract 
+
+interface   // define the rules  == common behaviour 
+
+final 
+
+
+Database 
+	Oracle
+	MYSQL 
+	
+
+interface CRUD operation
+	create() 
+	read ()
+	 readByName ()
+	 readByEmpNo()
+	update ()
+	delete ()

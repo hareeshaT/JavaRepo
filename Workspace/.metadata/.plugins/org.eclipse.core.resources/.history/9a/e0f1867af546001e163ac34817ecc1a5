@@ -1,0 +1,15 @@
+package Day4;
+
+public class Circle extends Shape{
+	
+	public Circle(String name) {
+		super(name);
+	}
+
+	private int radius;
+
+	@Override
+	public float calculateArea() {
+		return 0;
+	}
+}
