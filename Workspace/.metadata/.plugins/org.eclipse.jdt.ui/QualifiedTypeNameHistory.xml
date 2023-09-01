@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.model.Grocery"/>
+    <fullyQualifiedTypeName name="com.model.Shampoo"/>
+    <fullyQualifiedTypeName name="com.model.Toy"/>
+    <fullyQualifiedTypeName name="com.model.Biscuit"/>
+    <fullyQualifiedTypeName name="com.dao.DAOGroceryImpl"/>
+    <fullyQualifiedTypeName name="com.dao.DAOGrocery"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="com.exception.GroceryException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="Day4.AdvancedArithmetic"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.xdevapi.PreparableStatement"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="com.model.User"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.dao.Logindao"/>
+    <fullyQualifiedTypeName name="cm.service.LoginServiceImpl"/>
+    <fullyQualifiedTypeName name="cm.service.LoginService"/>
+    <fullyQualifiedTypeName name="com.dao.LogindaoImpl"/>
+    <fullyQualifiedTypeName name="com.exception.LoginException"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.MysqlConnection"/>
+    <fullyQualifiedTypeName name="com.dao.MySqlConnection"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="java.sql.Statement"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="com.dao.HrdaoImpl"/>
+    <fullyQualifiedTypeName name="com.dao.Hrdao"/>
+    <fullyQualifiedTypeName name="com.model.Employee"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.model.Department"/>
+</qualifiedTypeNameHistroy>

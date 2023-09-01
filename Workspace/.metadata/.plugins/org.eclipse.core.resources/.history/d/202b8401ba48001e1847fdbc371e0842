@@ -1,0 +1,3 @@
+module mavenDemo2 {
+	requires JDBC2;
+}

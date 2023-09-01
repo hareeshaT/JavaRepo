@@ -1,0 +1,87 @@
+
+
+\\172.16.2.55\Java_Training4
+
+
+7th Aug 2023 
+
+OOP  Object Orineted Programming    (Concept / Pricipal) 
+
+	implementation  --> C++ , JAVA , .NET
+
+
+Soft
+
+
+Java  --> Sun Tech  --> James  --> Oracle 
+					Create an account 
+
+
+CLI  Command Line Interface 
+
+	JDK   Java Development Kit (1.8 --> 11) 
+		a) JRE   Java Run Environment 	--> command  --> cmd > java <Filename>.class 
+		       +
+		b) JVM    Java Virtual Machine 
+.
+
+	English --> statement  --> HLL (High level language) --<Filename>.java -- > JVM -->LLL (Low Level Language)  machine (OS) 
+
+
+<Filename>.java   -- Translated   --Both 
+				a) Interpretor  (line by line)    java    --> <Filename>
+				b) Compiler      (all ) 	  javac   --> <Filename>.class
+
+
+
+
+Pre software 
+
+	1) JDK 1.8 
+	2) Text editor ( notepad , Wordpad .....) 
+	3) CLI  --> Command line interface   cmd > 
+
+	4)  IDE Integrated Development Environment  
+			a) Eclipse  ( Open source)
+			b) Netbeans (Sun --> Oracle )
+			c) intellij
+			 
+OpenJDK 
+
+Install Java 
+
+Configure  --> Environment variable 
+	1) path  =..........; <location of JDK.X\bin > C:\Program Files\Java\jdk1.8.0_301\bin
+	2) JAVA_HOME          <location of JDK.X>
+
+Comment 
+	// single line comment 
+	/*
+		Multi level comment 
+	*/
+
+	/**	Doc --> Documentation 
+	*
+	*
+	*
+	*/
+
+
+Dir  Directory 
+
+
+OOP
+
+ 1) Class     ( Blue print ) 
+ 2) Object   ( based on the class we create object/ Objects )
+ 3) Inheritance     reuse an existing class 
+ 4) Abstraction                hide 
+ 5) Polymorphism     Multiple form add (2,3)   add (2,3,4) 
+ 6) Encapsulation 
+
+
+
+
+
+
+

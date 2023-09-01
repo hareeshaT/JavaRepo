@@ -1,0 +1,23 @@
+package Day3;
+
+public class StringRange {
+	Static String newStr="";
+	public static String strRange(String str,int start,int end) {
+		
+		for (int i = 0; i < str.length(); i++) {
+			if(i>=start && i<=end) {
+				newStr+=str.charAt(i);
+			}
+			else {
+				newStr+=" ";
+			}
+		}
+		return newStsr;
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

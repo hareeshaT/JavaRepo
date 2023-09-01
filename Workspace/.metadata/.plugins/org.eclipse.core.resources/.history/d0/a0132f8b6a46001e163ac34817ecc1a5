@@ -1,0 +1,12 @@
+package Day3;
+
+public class Pangram {
+	public static boolean isPangram(String str) {
+		return true;
+	}
+	public static void main(String[] args) {
+		
+
+	}
+
+}

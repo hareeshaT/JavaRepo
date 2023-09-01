@@ -1,0 +1,11 @@
+package cm.service;
+
+import com.exception.LoginException;
+import com.model.User;
+
+public interface LoginService {
+	public abstract User createUser(User user) throws LoginException;
+	public abstract String readUser(String username,String pwd) throws LoginException;
+	public abstract User updateUser(User user) throws LoginException;
+	public abstract User deleteUser(int userId) throws LoginException;
+}

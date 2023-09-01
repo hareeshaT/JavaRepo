@@ -1,0 +1,41 @@
+package com.main;
+
+import com.dao.DAOGrocery;
+import com.dao.DAOGroceryImpl;
+import com.model.Biscuit;
+import com.model.Shampoo;
+import com.model.Toy;
+
+public class ShoppingApp {
+
+	public static void main(String[] args) {
+		Shampoo shampoo=new Shampoo(500,"Loreal","White",302.87f);
+		Shampoo shampoo2=new Shampoo(1000,"Loreal","pink",302.87f);
+		Toy toy=new Toy("pink",'M',800,"Teddy",1500);
+		Biscuit biscuit = new Biscuit("Oreo",10,40,"CreamBiscuit");
+		
+		DAOGrocery daoGrocery = new DAOGroceryImpl();
+		
+		Shampoo shamapoo1=daoGrocery.createShampoo(shampoo);
+		System.out.println("Add First shampoo Item: "+shamapoo1.getBrand()+", "+shamapoo1.getColor()+", "+shamapoo1.getPrice()+", "+shamapoo1.getQuantity());
+		Shampoo shamapoo2=daoGrocery.createShampoo(shampoo2);
+		System.out.println("Add Second shampoo Item: "+shampoo2.getBrand()+", "+shampoo2.getColor()+", "+shampoo2.getPrice()+", "+shampoo2.getQuantity());
+		
+		Set<Shampoo> shampoos=daoGrocery.shampoos();
+		Shampoo shampoo3=daoGrocery.readShampoo("pink");
+		System.out.println("Get Pink shampoo: "+shampoo3.getBrand()+", "+shampoo3.getColor()+", "+shampoo3.getPrice()+", "+shampoo3.getQuantity());
+		
+		Shampoo shampoo4=daoGrocery.updateShampoo(196.45f);
+		System.out.println("Modified shampoo: "+shampoo4.getBrand()+", "+shampoo4.getColor()+", "+shampoo4.getPrice()+", "+shampoo4.getQuantity());
+		
+		//Shampoo shampoo5=daoGrocery.delShampoo("Loreal");
+		//System.out.println(shampoo5);
+		//System.out.println("Deleted shampoo: "+shampoo5.getBrand()+", "+shampoo5.getColor()+", "+shampoo5.getPrice()+", "+shampoo5.getQuantity());
+		
+		daoGrocery.createToy(toy);
+		daoGrocery.createBiscuit(biscuit);
+		
+		
+		
+	}
+}

@@ -1,0 +1,12 @@
+package main;
+
+import com.model.Department;
+
+public class App {
+
+	public static void main(String[] args) {
+		Department dept=new Department();
+
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.model;
+
+public class Biscuit {
+	private String name;
+	private int quantity;
+	private int price;
+	private String category;
+}

@@ -1,0 +1,38 @@
+18th Aug 2023
+
+Class 
+Object 
+Encapsulation  ( state + behaviour) 
+Inheritance    ( extends ) 
+
+	Parent/Base/ Super 		Child/Derived/sub class 
+
+super  --> immediate parent 
+super( )  => parent constructor
+
+Access modifiers 
+  1) default 
+  2) private 
+  3) protected
+  4) public 
+
+
+polymorphism 
+		1) Static 				method overload 
+		2) Runtime/ Dynamic     method Override  --Inheritance
+
+
+method overload 
+
+
+	in class there can be function with same name but different arguments
+
+	return type  can be different  
+	
+method Override
+	1) class extends parent 
+	2) @Override is optional  == good practise 
+	3) function signature in the parent class must be the same inchild class 
+		<datatype> functionName(arg)  
+	4) return type should be Same 
+	5) access modifier shoulc be equal or greater than parent access modifier 

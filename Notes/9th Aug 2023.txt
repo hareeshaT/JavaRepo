@@ -1,0 +1,84 @@
+9th Aug 2023
+
+a) Class 
+     i) state
+    ii) behaviour 
+b) object 
+c) this keyword
+d) final 
+
+
+
+Static data
+
+   variable = <data>
+
+	final int i = 10;     const  == constant == fixed == cant change /alter 
+
+
+
+	i = 20;
+
+Runtime 
+
+
+    public static void main(String[] var )     --> entry point for JRE  ==  method signature 
+
+    public static void main(String var )
+
+
+
+
+
+
+
+
+Loose coupling 
+
+
+Display any data  --> main()   function with primitive data type ( .....)
+
+function / method / behaviour 
+1) Function with no argument  and NO return type 
+2) function with no argument and return type 
+3) function with one argument and no retun type 
+4) function with one argument and return
+5) function with one argument and return different data type  
+			 "Ans is 20"  = String add (int 20) 
+6) function with two argument and return 
+				        a) int 5  = add(2,3)
+					b) M/F= gender(name)
+					c) true/ false  = large(5,6) 
+
+7) function with an int[ ]  and return 
+	main() = --> Service  -- fn( int[ ]  arr
+
+8) function with an int[ ]  and returns int[ ] 
+
+			increment ({1,3,5,7,9})
+			{
+			[i] + 10 
+			}
+
+Objects 
+
+9) function with an object as an argument and return primitive 
+	
+		
+Array 
+ its a collection similar data 
+	index == 0 
+Java 
+	1)  <data_type> var[ ] = { value1,value2,value3...}
+		
+
+				int    oneArray [] ={1,3,5,7,9}
+				int[ ] oneArray  ={1,3,5,7,9}
+
+				char[ ] name = {'S','T','G' }
+
+					String[ ] var = {"Karthi","Thiru"} 
+	
+	2) 	int[<size>] variable = new int[<size>]
+
+				int[3] var	= new int[3]

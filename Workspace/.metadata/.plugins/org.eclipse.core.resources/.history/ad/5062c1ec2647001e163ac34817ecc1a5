@@ -1,0 +1,9 @@
+package com.dao;
+
+import java.sql.Connection;
+
+import com.model.User;
+
+public interface Logindao {
+	public abstract User createUser(User user);
+}

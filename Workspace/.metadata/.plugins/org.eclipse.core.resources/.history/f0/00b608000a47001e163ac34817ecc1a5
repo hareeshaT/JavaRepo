@@ -1,0 +1,8 @@
+package Day4;
+
+public abstract class Card {
+	 private String holderName;
+	 private String cardNumber;
+	 private String expiryDate;
+
+}

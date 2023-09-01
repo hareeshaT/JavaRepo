@@ -1,0 +1,11 @@
+package Day4;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Circle circle = new Circle("Circle", 5);
+        Square square = new Square("Square", 4);
+        Rectangle rectangle = new Rectangle("Rectangle", 6, 8);
+	}
+
+}

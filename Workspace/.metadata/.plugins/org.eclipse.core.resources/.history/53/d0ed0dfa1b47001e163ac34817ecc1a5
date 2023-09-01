@@ -1,0 +1,30 @@
+package Day7;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class ExtractDateTime {
+
+	public static void main(String[] args) {
+		String dateString = "2023-08-30 15:45:30"; // Replace with your date string
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        //try {
+            // Parse the date string into a Date object
+            Date date = dateFormat.parse(dateString);
+
+            // Extract and print the date
+            SimpleDateFormat dateOnlyFormat = new SimpleDateFormat("yyyy-MM-dd");
+            String extractedDate = dateOnlyFormat.format(date);
+            System.out.println("Extracted Date: " + extractedDate);
+
+            // Extract and print the time
+            SimpleDateFormat timeOnlyFormat = new SimpleDateFormat("HH:mm:ss");
+            String extractedTime = timeOnlyFormat.format(date);
+            System.out.println("Extracted Time: " + extractedTime);
+        //} catch (ParseException e) {
+            System.err.println("Error parsing date: " + e.getMessage());
+        //}
+	}
+
+}

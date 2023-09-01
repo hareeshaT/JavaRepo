@@ -1,0 +1,16 @@
+package Day2;
+
+public class Room {
+	private int roomNo;
+	private String roomType;
+	private String roomArea;
+	private boolean ACMachine;
+	
+	
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

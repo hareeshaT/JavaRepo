@@ -1,0 +1,9 @@
+package InheritAssign;
+
+import Day2.A;
+
+public class B extends A{
+	public void displayB() {
+        System.out.println("This is class B");
+    }
+}

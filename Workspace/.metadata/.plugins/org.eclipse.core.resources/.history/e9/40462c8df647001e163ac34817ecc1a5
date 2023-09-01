@@ -1,0 +1,39 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.model.Department;
+import com.model.Employee;
+
+public class HrdaoImpl implements Hrdao{
+
+	@Override
+	public List<Department> readAllDepartments() {
+		Connection connection=MySqlConnection.getConnection();
+		ResultSet resultSet=null;
+		Department department=null;
+		Employee employee=null;
+		List<Department> departments=new ArrayList<>();
+		List<Employee> employees=new ArrayList<>();
+		try {
+			Statement statement=connection.createStatement();
+			String query="SELECT d.dept_id,d.dept_name ,e.emp_id,e.emp_name,e.emp_salary from department as d JOIN employee as e on d.dept_id = e.dept_fk_id";
+			resultSet=statement.executeQuery(query);
+			while(resultSet.next()) {
+				department=new Department();
+				department.setDept_id(resultSet.getInt("dept_id"));
+				department.setDept_name(resultSet.getString("dept_name"));
+				departments.add(department);
+			}
+		} catch (SQLException e) {
+			System.out.println(e.getMessage());
+		}
+		return departments;
+	}
+
+}

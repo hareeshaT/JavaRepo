@@ -1,0 +1,9 @@
+package com.model;
+
+public class Toy {
+	private String color;
+	private char size;
+	private int price;
+	private String name;
+	private float weight;
+}
