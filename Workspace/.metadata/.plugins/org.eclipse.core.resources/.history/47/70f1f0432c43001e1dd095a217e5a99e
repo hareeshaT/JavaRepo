@@ -1,0 +1,42 @@
+package com.main;
+
+import java.util.Set;
+
+import com.dao.DAOPassenger;
+import com.dao.DAOPassengerImpl;
+import com.exception.IRCTCexception;
+import com.model.Passenger;
+
+public class IRCTCApp {
+
+	public static void main(String[] args) {
+		Passenger passenger = new Passenger(10,"Chandu",24);
+		Passenger passenger2 = new Passenger(20,"Haree",23);
+		DAOPassenger daoPassenger=new DAOPassengerImpl();
+		
+		try {
+			daoPassenger.createPassenger(passenger);
+			daoPassenger.createPassenger(passenger2);
+		}catch(IRCTCexception e){
+			System.out.println(e.getMessage());
+		}
+		
+		Set<Passenger> chartPassengerSet=daoPassenger.passengerChart();
+		System.out.println("Total Passengers count is "+chartPassengerSet.size());
+		for (Passenger passengerITR : chartPassengerSet) {
+			System.out.println("PNR No: "+passengerITR.getPnrNo());
+			System.out.println("PNR Name: "+passengerITR.getPnrName());
+			System.out.println("PNR Age: "+passengerITR.getPnrAge());
+		}
+		
+		try {
+			Passenger passengerDao=daoPassenger.readPassenger(10);
+			if(passengerDao!=null) {
+				System.out.println(passengerDao.getPnrName());
+			}
+		}catch(IRCTCexception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+}

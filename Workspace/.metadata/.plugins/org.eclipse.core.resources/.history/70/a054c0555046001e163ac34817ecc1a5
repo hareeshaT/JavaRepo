@@ -1,0 +1,10 @@
+package Day2;
+
+public class Animal {
+	void walk(){
+		System.out.println("I am walking");
+	}
+	void bark(){
+		System.out.println("I am barking");
+	}
+}

@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author turimerlah
+ *
+ */
+module MySampleProject {
+}

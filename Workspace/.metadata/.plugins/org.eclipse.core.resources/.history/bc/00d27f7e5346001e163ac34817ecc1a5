@@ -1,0 +1,14 @@
+package Day3;
+
+public class Replacedwithh {
+	
+	public static String replace(String str) {
+		return str;
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

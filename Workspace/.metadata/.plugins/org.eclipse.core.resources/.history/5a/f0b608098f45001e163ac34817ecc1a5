@@ -1,0 +1,113 @@
+package com.dao;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import com.model.Biscuit;
+import com.model.Grocery;
+import com.model.Shampoo;
+import com.model.Toy;
+
+public class DAOGroceryImpl implements DAOGrocery{
+	
+	static Set<Grocery> GroceryItems = new HashSet();
+	static Set<Shampoo> shampooSet = new HashSet();
+	
+	@Override
+	public Set<Grocery> createCart(Shampoo shampoo, Toy toy, Biscuit biscuit) {
+		//GroceryItems.add(shampoo);
+		return GroceryItems;
+	}
+
+	@Override
+	public Shampoo createShampoo(Shampoo shampoo) {
+		shampooSet.add(shampoo);
+		return shampoo;
+	}
+
+	@Override
+	public Shampoo readShampoo(String color) {
+		Shampoo realShampoo = null;
+		for (Shampoo shampoo : shampooSet) {
+			if(shampoo.getColor()==color) {
+				realShampoo=shampoo;
+			}
+		}
+		return realShampoo;
+	}
+
+	@Override
+	public Shampoo updateShampoo(float price) {
+		Shampoo realShampoo=null;
+		for (Shampoo shampoo : shampooSet) {
+			if(shampoo.getQuantity()==500) {
+				float oldPrice=shampoo.getPrice();
+				oldPrice=price;
+				realShampoo=shampoo;
+			}
+		}
+		return realShampoo;
+	}
+
+	@Override
+	public Shampoo delShampoo(String brand) {
+		Shampoo duplicateShampoo=null;
+		for (Shampoo shampoo : shampooSet) {
+			if(shampoo.getBrand()==brand) {
+				if(shampoo.getColor().equalsIgnoreCase("pink")) {
+					shampooSet.remove(shampoo);
+				}
+			}
+		}
+		return null;
+	}
+
+	@Override
+	public Toy createToy(Toy toy) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Toy readToy(Toy toy) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Toy updateToy(Toy toy) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Toy delToy(Toy toy) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Biscuit createBiscuit(Biscuit buscuit) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Biscuit readBiscuit(Biscuit buscuit) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Biscuit updateBiscuit(Biscuit buscuit) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Biscuit delBiscuit(Biscuit buscuit) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

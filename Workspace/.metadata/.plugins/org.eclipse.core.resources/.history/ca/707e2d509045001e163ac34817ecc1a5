@@ -1,0 +1,26 @@
+package com.main;
+
+import com.dao.DAOGrocery;
+import com.dao.DAOGroceryImpl;
+import com.model.Biscuit;
+import com.model.Shampoo;
+import com.model.Toy;
+
+public class ShoppingApp {
+
+	public static void main(String[] args) {
+		Shampoo shampoo=new Shampoo(500,"Loreal","White",302.87f);
+		Shampoo shampoo2=new Shampoo(1000,"Loreal","pink",302.87f);
+		Toy toy=new Toy("pink",'M',800,"Teddy",1500);
+		Biscuit biscuit = new Biscuit("Oreo",10,40,"CreamBiscuit");
+		
+		DAOGrocery daoGrocery = new DAOGroceryImpl();
+		Shampoo shamapoo=daoGrocery.createShampoo(shampoo);
+		daoGrocery.createShampoo(shampoo2);
+		
+		daoGrocery.createToy(toy);
+		daoGrocery.createBiscuit(biscuit);
+		
+		
+	}
+}

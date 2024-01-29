@@ -1,0 +1,160 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.sql.Statement;
+//import java.util.Scanner;
+import java.util.List;
+
+import com.exception.LoginException;
+import com.model.User;
+
+public class LogindaoImpl implements Logindao{
+
+	public static Connection getConnection() {
+		Connection connection = null;
+//		Statement statement = null;
+//		ResultSet resultSet = null;
+//		PreparedStatement prepareStatement=null;
+		try {
+			String driverName = "com.mysql.cj.jdbc.Driver";
+			String url = "jdbc:mysql://localhost:3306/stg";
+			Class.forName(driverName);
+			connection = DriverManager.getConnection(url, "root", "Reset123");
+			//System.out.println(connection != null ? "connection established" : "connection failed");
+		} catch (ClassNotFoundException cnfe) {
+			System.out.println("There is no respective jars : " + cnfe.getMessage());
+		} catch (SQLException se) {// Catching SQL Exception
+			System.out.println("SQL Exception :" + se.getMessage());
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+
+		/*
+		 * finally { try { connection.close(); } catch (SQLException e) {
+		 * e.printStackTrace(); } }
+		 */
+		return connection;
+	}
+
+	@Override
+	public User createUser(User user) {
+		Connection connection = getConnection();
+		PreparedStatement preapareStatement=null;
+		String insertQuery="INSERT INTO user (user_name, password) VALUES (?,?)";
+		try {
+			preapareStatement=connection.prepareStatement(insertQuery);
+			preapareStatement.setString(1, user.getUserName());
+			preapareStatement.setString(2, user.getPassword());
+			preapareStatement.execute();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return user;
+	}
+	
+	@Override
+	public User searchByUserId(int id) throws LoginException {
+		ResultSet resultSet = null;
+		Connection connection = getConnection();
+		User user=null;
+		PreparedStatement preapareStatement=null;
+		String searchQuery="select * from user where user_id=?";
+		try {
+			preapareStatement=connection.prepareStatement(searchQuery);
+			preapareStatement.setInt(1, id);
+			resultSet=preapareStatement.executeQuery();
+			user=new User();
+			while(resultSet.next()) {
+				 user.setUserId(resultSet.getInt("user_id"));
+				 user.setUserName(resultSet.getString("user_name"));
+			}
+		} catch (SQLException e) {
+			throw new LoginException(e.getMessage());
+		}
+		return user;
+	}
+	
+	@Override
+	public List<User> getAllUsers() {
+		Connection connection = getConnection();
+		User user=null;
+		List<User> allusers = new ArrayList<>();
+		PreparedStatement preapareStatement=null;
+		ResultSet resultSet = null;
+		String getQuery="select * from user";
+		try {
+			preapareStatement=connection.prepareStatement(getQuery);
+			resultSet=preapareStatement.executeQuery();
+			while(resultSet.next()) {
+				 user=new User();
+				 user.setUserId(resultSet.getInt("user_id"));
+				 user.setUserName(resultSet.getString("user_name"));
+				 allusers.add(user);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return allusers;
+	}
+
+	@Override
+	public User readUser(String username, String pwd) throws LoginException {
+		Connection connection = getConnection();
+		User user=null;
+		ResultSet resultSet = null;
+		PreparedStatement preapareStatement=null;
+		String selectquery="Select * from user where user_name=? and password=?";
+		try {
+			preapareStatement=connection.prepareStatement(selectquery);
+			preapareStatement.setString(1, username);
+			preapareStatement.setString(2, pwd);
+			resultSet=preapareStatement.executeQuery();
+			user=new User();
+			while(resultSet.next()) {
+				 user.setUserId(resultSet.getInt("user_id"));
+				 user.setUserName(resultSet.getString("user_name"));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return user;
+	}
+
+	@Override
+	public User updateUser(String pwd,String username) throws LoginException {
+		Connection connection = getConnection();
+		User user=null;
+		int resultSet = 0;
+		PreparedStatement preapareStatement=null;
+		String updateQuery="UPDATE user SET password = ? WHERE user_name = ?";
+		try {
+			preapareStatement=connection.prepareStatement(updateQuery);
+			preapareStatement.setString(1, pwd);
+			preapareStatement.setString(2, username);
+			resultSet=preapareStatement.executeUpdate();
+			while(resultSet>0) {
+				 user=new User();
+				 user.setUserId(id);
+				 user.setPassword(pwd);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return user;
+	}
+
+	@Override
+	public User deleteUser(int userId) throws LoginException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+	
+}

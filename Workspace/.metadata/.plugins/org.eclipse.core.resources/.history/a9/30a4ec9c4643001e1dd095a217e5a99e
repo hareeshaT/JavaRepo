@@ -1,0 +1,26 @@
+package Day2;
+
+public class Room {
+	private int roomNo;
+	private String roomType;
+	private String roomArea;
+	private boolean ACMachine;
+	
+	public Room() {
+		super();
+	}
+	
+	public Room(int roomNo, String roomType, String roomArea, boolean aCMachine) {
+		super();
+		this.roomNo = roomNo;
+		this.roomType = roomType;
+		this.roomArea = roomArea;
+		ACMachine = aCMachine;
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

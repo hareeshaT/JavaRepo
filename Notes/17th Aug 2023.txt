@@ -1,0 +1,32 @@
+17th Aug 2023
+Class 
+Object 
+Memory 
+
+String 
+a) Literal 
+	String var1 = "Hello"		     // String poll 
+
+b) String object 
+
+	String var1 = new String("Hello");  //	Heap 
+
+
+
+
+
+
+
+
+	OS 
+	   Java 
+		1) Stack 			2) Heap  ( Temp) 
+			 				memory 
+
+memory =   new ClassName() 
+
+
+
+
+
+Inheritance  --> To reuse existing class 

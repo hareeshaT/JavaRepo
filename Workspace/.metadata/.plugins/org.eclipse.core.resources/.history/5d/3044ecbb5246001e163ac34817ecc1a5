@@ -1,0 +1,10 @@
+package Day3;
+
+public class ToLower {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,43 @@
+package cm.service;
+
+import java.sql.Connection;
+
+import com.dao.Logindao;
+import com.dao.LogindaoImpl;
+import com.exception.LoginException;
+import com.model.User;
+
+public class LoginServiceImpl implements LoginService{
+
+	@Override
+	public User createUser(User user) throws LoginException {
+		//Connection connection=LogindaoImpl.getConnection();
+		if(user.getPassword().length()>=5) {
+			Logindao logindao=new LogindaoImpl();
+			logindao.createUser(user);
+		}
+		else {
+			throw new LoginException("Password must be greater than 5 chars");
+		}
+		return user;
+	}
+
+	@Override
+	public String readUser(String username, String pwd) throws LoginException {
+		//Connection connection=LogindaoImpl.getConnection();
+		return null;
+	}
+
+	@Override
+	public User updateUser(User user) throws LoginException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User deleteUser(int userId) throws LoginException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

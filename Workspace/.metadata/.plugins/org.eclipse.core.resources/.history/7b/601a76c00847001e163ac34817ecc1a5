@@ -1,0 +1,17 @@
+package Day4;
+
+public class MyCalculator implements AdvancedArithmetic{
+
+	@Override
+	public int divisor_sum() {
+		int n=6;
+		
+		return 0;
+	}
+	
+	public static void main(String[] args) {
+		System.out.println();
+
+	}
+
+}

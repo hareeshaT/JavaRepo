@@ -1,0 +1,17 @@
+package com.model;
+
+public class Toy {
+	private String color;
+	private char size;
+	private int price;
+	private String name;
+	private float weight;
+	public Toy(String color, char size, int price, String name, float weight) {
+		super();
+		this.color = color;
+		this.size = size;
+		this.price = price;
+		this.name = name;
+		this.weight = weight;
+	}
+}
